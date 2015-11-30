@@ -1,0 +1,23 @@
+<div class="jumbotron">
+  <h1>Formulario para botillerias</h1>
+  <p class="lead">
+    Prueba de angular consumiendo rails API
+  </p>
+</div>
+<div class="row marketing">
+  <form ng-submit="crearBotilleria()">
+    <div class="form-group">
+      <label for="exampleInputEmail">Nombre de la botilleria</label>
+      <input type="text" class="form-control" id="exampleInputEmail" placeholder="nombre de la botilleria" ng-model="datos.name">
+    </div>
+    <div class="form-group">
+      <label for="direccion">Direccion</label>
+      <input type="text" class="form-control" id="direccion" placeholder="Direccion" ng-model="datos.address">
+    </div>
+    <div class="form-group">
+      <label for="phone">Telefono:</label>
+      <input type="text" class="form-control" placeholder="Telefono" ng-model="datos.phone">
+    </div>
+    <button type="submit" class="btn btn-default">Enviar</button>
+  </form>
+</div>
